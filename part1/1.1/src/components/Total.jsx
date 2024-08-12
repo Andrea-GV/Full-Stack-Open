@@ -1,4 +1,4 @@
-// import React from 'react'
+import React from 'react'
 
 const Total = ({ exercises1, exercises2, exercises3 }) => {
   return (
