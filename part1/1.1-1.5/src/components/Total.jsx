@@ -1,9 +1,13 @@
 import React from 'react'
 
-const Total = ({part1, part2, part3 }) => {
+const Total = ({ parts }) => {
+  let totalExercises = 0
+  parts.forEach(part => {
+    totalExercises += part.exercises
+  })
   return (
     <div>
-      <p>Number of exercises {part1.exercises + part2.exercises + part3.exercises}</p>
+      <p>Number of exercises {totalExercises}</p>
     </div>
   )
 }
